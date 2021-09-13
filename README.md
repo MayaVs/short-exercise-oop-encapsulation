@@ -30,8 +30,18 @@ Use the following questions to guide your exploration and learning! 🗺
 - Look at the `DodgyBankAccount`, this class is not well-encapsulated.
   Can you note down the problems with how the class is designed, and the ways it is being misused?
   
+  The rewardAmount member is public and can be accessed and mofidied from outside the class.
+  The same for accountBalance
+  addReward method is also public and can be executed from ouside the class
+  
 
 - Compare and contrast the `DodgyBankAccount` and the `SecureBankAccount`, how is the `SecureBankAccount` different to 
 the `DodgyBankAccount`? How is it designed to prevent it from being misused? Are there instances of better method names
   for clearer abstraction?
+  
+  The encapsulation principle is used properly for SecureBankAccount class. Using private access modifier for the class members and methods is better
+  I've noticed that debitAmount() and depositAmount() are repeating. Could be pulled up in superclass
+  
+  
+  
   
